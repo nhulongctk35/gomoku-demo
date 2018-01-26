@@ -1,0 +1,15 @@
+.board {
+  max-width: 500px;
+  margin: 0 auto;
+
+  &__cell {
+    margin: 1px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 100%;
+    }
+  }
+}
