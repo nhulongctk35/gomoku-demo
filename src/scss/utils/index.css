@@ -6,8 +6,8 @@
   flex: 1;
 }
 
-.u-no-border {
-  border: none !important;
+.u-border {
+  border: 1px solid #ccc !important;
 }
 
 .u-no-padding {
@@ -16,4 +16,10 @@
 
 .u-text-center {
   text-align: center !important;
+}
+
+.u-list-default {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
