@@ -1,9 +1,11 @@
 .board {
   max-width: 500px;
   margin: 0 auto;
+  background-color: #c19b6c;
 
   &__cell {
     margin: 1px;
+    position: relative;
 
     &::before {
       content: '';

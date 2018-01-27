@@ -28,14 +28,14 @@ class GoBoard extends Component {
     const player = data[xAxis][yAxis];
 
     if (player === PLAYERS.A) {
-      return <span>A</span>
-    } else {
-      if (player === PLAYERS.B) {
-        return <span>B</span>
-      }
-
-      return;
+      return <span className="icon icon--black" />
     }
+
+    if (player === PLAYERS.B) {
+      return <span className="icon icon--white" />
+    }
+
+    return;
   }
 
   renderBoardView = () => {
@@ -47,7 +47,7 @@ class GoBoard extends Component {
           <ul key={yAxis} className="u-d-flex u-list-default">
             {map(totalItems, (xAxis) => {
               return <li
-                        className="u-border u-no-padding board__cell"
+                        className="u-border u-no-padding u-no-margin board__cell"
                         onClick={() => { this.props.onClickCell(xAxis, yAxis) }}
                         key={yAxis + xAxis}>{this.renderGoPiece(xAxis, yAxis)}</li>
             })}

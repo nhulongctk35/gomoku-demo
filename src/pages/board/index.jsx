@@ -21,7 +21,7 @@ class BoardContainer extends Component {
     this.state = {
       boardData: fakeBoardData(),
       size: SIZE,
-      currentPlayer: null, 
+      currentPlayer: PLAYERS.A, 
     };
   }
 
