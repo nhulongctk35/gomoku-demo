@@ -138,12 +138,21 @@ class BoardContainer extends Component {
     const { size } = this.state;
 
     return (
-      <div>
+      <div className="u-d-flex">
         <GoBoard
           size={size}
           onClickCell={this.handleSelectCell}
           data={this.state.boardData}
         />
+        <div className="board__control u-ml-3">
+          <div className="form-group">
+            <label htmlFor="gmoku__size">SIZE</label>
+            <input
+              id="gmoku__size"
+              type="number"
+              className="form-control" />               
+          </div>
+        </div>
       </div>
     );
   }
